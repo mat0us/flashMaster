@@ -119,7 +119,7 @@ const FileUpload: React.FC<FileUploadProps> = ({ onFileUpload, setIsLoading }) =
               <DialogDescription asChild>
                 <div className="space-y-3 pt-2 text-sm text-left">
                   <p>Each line in your CSV file should represent one flashcard.</p>
-                  <p>The format is: <code>question,answer</code></p>
+                  <p>The format is: <code>{'question,answer'}</code></p>
                   <p className="font-semibold mt-2">Examples:</p>
                   <pre className="mt-1 w-full overflow-x-auto rounded-md bg-muted p-3 font-mono text-xs">
                     {`What is the capital of France?,Paris
@@ -131,8 +131,8 @@ Co je permitivita vakua a jaká je její hodnota?,Permitivita vakua $\\epsilon_{
                   <ul className="list-disc space-y-1 pl-5 mt-2">
                     <li>The <strong>question</strong> is all text before the first comma on a line.</li>
                     <li>The <strong>answer</strong> is all text after the first comma on that line.</li>
-                    <li>If your question or answer includes commas, it's best to enclose that field in double quotes (e.g., <code>"Question, with comma","Answer, with comma"</code>). The parser tries to handle unquoted fields with commas by treating everything after the first comma as part of the answer.</li>
-                    <li>You can use LaTeX for math formulas by enclosing them in single dollar signs (e.g., <code>$E=mc^2$</code> or <code>$\\frac{a}{b}$</code>). These will be rendered on the flashcards. Note that backslashes in LaTeX might need to be escaped with another backslash (e.g., <code>$\\times$</code> for the multiplication symbol) depending on your text editor or CSV generation tool.</li>
+                    <li>If your question or answer includes commas, it's best to enclose that field in double quotes (e.g., <code>{'"Question, with comma","Answer, with comma"'}</code>). The parser tries to handle unquoted fields with commas by treating everything after the first comma as part of the answer.</li>
+                    <li>You can use LaTeX for math formulas by enclosing them in single dollar signs (e.g., <code>{'$E=mc^2$'}</code> or <code>{'$\\frac{a}{b}$'}</code>). These will be rendered on the flashcards. Note that backslashes in LaTeX might need to be escaped with another backslash (e.g., <code>{'$\\times$'}</code> for the multiplication symbol) depending on your text editor or CSV generation tool.</li>
                   </ul>
                 </div>
               </DialogDescription>
