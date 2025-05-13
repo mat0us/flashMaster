@@ -127,16 +127,14 @@ const FileUpload: React.FC<FileUploadProps> = ({ onFileUpload, setIsLoading }) =
                   <pre className="mt-1 w-full overflow-x-auto rounded-md bg-muted p-3 font-mono text-xs">
                     {`What is the capital of France?,Paris
 What is 2 + 2?,4
-"What is the chemical symbol for water, commonly known as H2O?",H2O
-What is $\\sqrt{16}$?,4
-"A question, with a comma inside it","An answer, also with a comma"
-Translate 'hello' to Spanish,Hola`}
+"A question, with a comma?","An answer, also with a comma."
+What is $\\alpha + \\beta$?,$\\gamma$`}
                   </pre>
                   <ul className="list-disc space-y-1 pl-5 mt-2">
                     <li>The <strong>question</strong> is all text before the first comma on a line.</li>
                     <li>The <strong>answer</strong> is all text after the first comma on that line.</li>
                     <li>If your question or answer includes commas, it&apos;s best to enclose that field in double quotes (e.g., <code>&quot;Question, with comma&quot;,&quot;Answer, with comma&quot;</code>). The parser tries to handle unquoted fields with commas by treating everything after the first comma as part of the answer.</li>
-                    <li>You can use LaTeX for math formulas by enclosing them in single dollar signs (e.g., <code>$\\sqrt{x^2+y^2}$</code> or <code>$E=mc^2$</code>). These will be rendered on the flashcards. Note that backslashes in LaTeX might need to be escaped with another backslash (e.g., <code>$\\times$</code> for the multiplication symbol) depending on your text editor or CSV generation tool.</li>
+                    <li>You can use LaTeX for math formulas by enclosing them in single dollar signs (e.g., <code>{'$\\sqrt{x^2+y^2}$'}</code> or <code>{'$E=mc^2$'}</code>). These will be rendered on the flashcards. Note that backslashes in LaTeX might need to be escaped with another backslash (e.g., <code>{'$\\times$'}</code> for the multiplication symbol) depending on your text editor or CSV generation tool.</li>
                   </ul>
                 </div>
               </DialogDescription>
