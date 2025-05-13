@@ -12,8 +12,6 @@ Tento projekt je vytvořen pomocí **Firebase Studio** a slouží jako jednoduch
 ## Technologie
 
 - [Firebase Studio](https://firebase.google.com/) – vizuální tvorba backendu a datové logiky.
-- Firebase Hosting
-- (volitelně) Firestore nebo Realtime Database
 
 ## Použití
 
