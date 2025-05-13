@@ -1,0 +1,12 @@
+Co charakterizujeme pomocí elektrického náboje?,Elektrické vlastnosti elementárních částic. Jde o vlastnost částic látky, která se projevuje tak, že na částici s touto vlastností působí elektromagnetické síly.
+Jaká je absolutní hodnota elementárního náboje elektronu nebo protonu?,Absolutní hodnota elementárního náboje je $e=1,602\times10^{-19}$ C.
+Jaká je jednotka elektrického náboje?,Jednotkou elektrického náboje je 1 Coulomb (C), což je ekvivalentní 1 A·s.
+Jak zní Coulombův zákon pro velikost síly mezi dvěma nehybnými bodovými náboji?,"$F=\frac{1}{4\pi\epsilon_{0}\epsilon_{r}}\frac{Q_{1}Q_{2}}{r^{2}}$, kde F je velikost síly, $Q_{1}$ a $Q_{2}$ jsou velikosti nábojů, r je vzdálenost mezi nimi, $\epsilon_{0}$ je permitivita vakua a $\epsilon_{r}$ je relativní permitivita prostředí.
+Jak zní Coulombův zákon ve vektorovém tvaru?,"$F=\frac{1}{4\pi\epsilon_{0}\epsilon_{r}}\frac{Q_{1}Q_{2}}{r^{3}}r=\frac{1}{4\pi\epsilon_{0}\epsilon_{r}}\frac{Q_{1}Q_{2}}{r^{2}}r^{0}$, kde $r^{0}$ je jednotkový vektor ve směru osy r.
+Co je permitivita vakua a jaká je její hodnota?,Permitivita vakua $\epsilon_{0}$ charakterizuje prostředí a její hodnota je $\epsilon_{0}=8,854187\times10^{-12}F\cdot m^{-1}$.
+Co je relativní permitivita a co udává?,Relativní permitivita $\epsilon_{r}$ je bezrozměrné číslo, které udává, kolikrát je permitivita materiálu větší než permitivita vakua.
+Pro jaké typy nábojů platí Coulombův zákon?,Coulombův zákon platí pro bodové náboje, resp. pro náboje umístěné na koulích.
+Co je intenzita elektrického pole a jak se vypočítá?,Intenzita elektrického pole se číselně rovná síle, která by v daném místě působila na kladný bodový jednotkový náboj. Vypočítá se jako $E=\frac{F}{Q_{2}}$ nebo $E=\frac{1}{4\pi\epsilon_{0}\epsilon_{r}}\frac{Q_{1}}{r^{2}}r^{0}$.
+Jak se vypočítá síla působící na bodový náboj Q umístěný v místě s intenzitou elektrického pole E?,Síla F se vypočítá jako $F=QE$.
+Jaká je charakteristika homogenního elektrického pole?,V homogenním elektrickém poli je jeho intenzita ve všech místech konstantní.
+Jak se definuje práce v elektrostatickém poli při přenosu náboje $Q_2$ z bodu $r_1$ do bodu $r_2$ od náboje $Q_1$?,Práce A se vypočítá jako $A=\int_{r_{1}}^{r_{2}}F~dr=\frac{Q_{1}Q_{2}}{4\pi\epsilon_{0}}\frac{1}{r_{1}}-\frac{Q_{1}Q_{2}}{4\pi\epsilon_{0}}\frac{1}{r_{2}}$.
