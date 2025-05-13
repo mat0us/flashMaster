@@ -1,11 +1,28 @@
 import type React from 'react';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Fragment } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import type { CardData } from '@/interfaces';
+import { InlineMath } from 'react-katex';
 
 interface FlashcardProps {
   card: CardData | null;
 }
+
+const renderTextWithMath = (text: string | undefined | null) => {
+  if (!text) {
+    return null;
+  }
+  const parts = text.split('$');
+  return parts.map((part, index) => {
+    if (index % 2 === 1) {
+      // Odd parts are math
+      return <InlineMath key={index} math={part} />;
+    } else {
+      // Even parts are text
+      return <Fragment key={index}>{part}</Fragment>;
+    }
+  });
+};
 
 const Flashcard: React.FC<FlashcardProps> = ({ card }) => {
   const [isFlipped, setIsFlipped] = useState(false);
@@ -36,12 +53,12 @@ const Flashcard: React.FC<FlashcardProps> = ({ card }) => {
       <div className={`flashcard-inner ${isFlipped ? 'is-flipped' : ''}`}>
         <Card className="flashcard-front bg-card text-card-foreground flex items-center justify-center p-6">
           <CardContent className="text-center">
-            <p className="text-lg sm:text-xl md:text-2xl font-semibold">{card.question}</p>
+            <p className="text-lg sm:text-xl md:text-2xl font-semibold">{renderTextWithMath(card.question)}</p>
           </CardContent>
         </Card>
         <Card className="flashcard-back bg-card text-card-foreground flex items-center justify-center p-6">
           <CardContent className="text-center">
-            <p className="text-base sm:text-lg md:text-xl">{card.answer}</p>
+            <p className="text-base sm:text-lg md:text-xl">{renderTextWithMath(card.answer)}</p>
           </CardContent>
         </Card>
       </div>
